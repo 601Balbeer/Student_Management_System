@@ -49,7 +49,7 @@ public class Student_Management_System {
             pst.setString(3, branch);
             pst.setInt(4, sem);
             pst.executeUpdate();
-            System.out.println("✅ Student added!");
+            System.out.println("Student added!");
         } catch (Exception e) { System.out.println("Error: " + e.getMessage()); }
     }
 
@@ -94,7 +94,11 @@ public class Student_Management_System {
              PreparedStatement pst = con.prepareStatement(sql)) {
             pst.setString(1, usn);
             int rows = pst.executeUpdate();
+<<<<<<< HEAD
             System.out.println(rows > 0 ? "Deleted!" : "Student not found!");
+=======
+            System.out.println(rows > 0 ? " Deleted!" : "Student not found!");
+>>>>>>> 868ebeb13b166362da0b73efc9007555d530e793
         } catch (Exception e) { System.out.println("Error: " + e.getMessage()); }
     }
 
